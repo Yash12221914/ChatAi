@@ -1,0 +1,125 @@
+:root {
+  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: #121212;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #1e1e1e;
+}
+
+.container {
+  background: #1a1a1a;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #f5f5f5;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #222;
+  color: white;
+  outline: none;
+  transition: border 0.3s ease-in-out;
+}
+
+input:focus {
+  border-color: #4a90e2;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+button:hover {
+  background-color: #357abd;
+}
+
+button:focus {
+  outline: 3px solid #4a90e2;
+}
+
+.response {
+  font-size: 1rem;
+  color: #e0e0e0;
+  margin-top: 15px;
+}
+
+/* Light Mode */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #222;
+    background-color: #f4f4f4;
+  }
+  body {
+    background-color: #ffffff;
+  }
+  .container {
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    color: #222;
+  }
+  input {
+    background-color: #f9f9f9;
+    color: #222;
+    border: 1px solid #ccc;
+  }
+  button {
+    background-color: #4a90e2;
+  }
+  button:hover {
+    background-color: #357abd;
+  }
+  .response {
+    color: #444;
+  }
+}
